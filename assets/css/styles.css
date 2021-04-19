@@ -214,9 +214,11 @@ img{
 }
 .home__img{
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 295px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  clip-path: circle();
 }
 
 /*BUTTONS*/
@@ -288,11 +290,14 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
-  width: 95%;
-}
-.skills__css{
+.skills__ps{
   width: 85%;
+}
+.skills__drawing{
+  width: 90%;
+}
+.skills__illustrator{
+  width: 75%;
 }
 .skills__js{
   width: 65%;
