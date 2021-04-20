@@ -6,8 +6,6 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <!-- =====FONT AWESOME===== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="/src/css/instagram-widget.css" rel="stylesheet">
-<script src="/src/js/instagram-widget.js"></script>
 <title>Nancy Hassan</title>
 </head>
 <body>
@@ -27,16 +25,21 @@
     <div class="nav__toggle" id="nav-toggle"> <i class="fa fa-bars"></i> </div>
   </nav>
 </header>
+<!--===== SCROLL REVEAL =====--> 
+<script src="https://unpkg.com/scrollreveal"></script> 
+<!--===== JQUERY =====--> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<!--===== MAIN JS =====--> 
+<script src="assets/js/main.js"></script>
 <main class="l-main"> 
   <!--===== HOME =====-->
   <section class="home bd-grid" id="home">
-    <div class="home__img"> <img src="assets/img/Nancy Hassan.jpeg" alt="Nancy Hassan"> </div>
+  
     <div class="home__data">
       <h1 class="home__title">Hi, <br>
         I'am <span class="home__title-color">Nancy</span> <br>
         Graphic Designer </h1>
-      <a href="#" class="button">Contact</a> </div>
-    <div class="home__social"></div>
+      <a href="#contact" class="button">Contact</a> </div>
   </section>
   <!--===== ABOUT =====-->
   <section class="about section " id="about">
@@ -53,6 +56,7 @@
   <section class="skills section" id="skills">
     <h2 class="section-title">Skills</h2>
     <div class="skills__container bd-grid">
+          <div> <img src="assets/img/nancy-using-laptop.jpg" alt="" class="skills__img"> </div>
       <div>
         <h2 class="skills__subtitle">Profesional Skills</h2>
         <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
@@ -74,32 +78,43 @@
         </div>
       
       </div>
-      <div> <img src="assets/img/nancy-using-laptop.jpg" alt="" class="skills__img"> </div>
+    
     </div>
   </section>
   <!--===== WORK =====-->
   <section class="work section" id="work">
     <h2 class="section-title">Work</h2>
-    <div class="work__container bd-grid">
-      <div class="work__img"> <img src="assets/img/work1.jpg" alt=""> </div>
-      <div class="work__img"> <img src="assets/img/work2.jpg" alt=""> </div>
-      <div class="work__img"> <img src="assets/img/work3.jpg" alt=""> </div>
-      <div class="work__img"> <img src="assets/img/work4.jpg" alt=""> </div>
-      <div class="work__img"> <img src="assets/img/work5.jpg" alt=""> </div>
-      <div class="work__img"> <img src="assets/img/work6.jpg" alt=""> </div>
-    </div>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-05ec5a0c-3f24-4b32-a8b7-8e0779947484"></div>
+<script src="assets/js/removeAd.js"></script>
   </section>
   <!--===== CONTACT =====-->
   <section class="contact section" id="contact">
     <h2 class="section-title">Contact</h2>
+
+
+
     <div class="contact__container bd-grid">
-      <form action="" class="contact__form">
-        <input type="text" placeholder="Name" class="contact__input">
-        <input type="mail" placeholder="Email" class="contact__input">
-        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-        <input type="button" value="Send" class="contact__button button">
+      <form action="https://formspree.io/f/mwkapqdr"  method="POST" id="my-form" class="contact__form">
+        <div class="form-group">
+        <input type="text" placeholder="First Name" class="contact__input" id="firstName" name="firstName">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last Name" class="contact__input" id="lastName" name="lastName">
+          </div>
+          <div class="form-group">
+        <input type="email" placeholder="Email" class="contact__input" id="email" name="email">
+          </div>
+          <div class="form-group">
+        <textarea name="massage" id="massage" cols="30" rows="10" class="contact__input"></textarea>
+          </div>
+        <input type="submit"  class="contact__button button">
       </form>
     </div>
+    <div id="status"></div>
+
+
+
   </section>
 </main>
 <!--===== FOOTER =====-->
@@ -108,9 +123,5 @@
   <div class="footer__social"> <a href="https://www.instagram.com/nancyysworld/"   target="_blank" class="footer__icon"> <i class="fa fa-instagram" ></i> </a> <a href="https://api.whatsapp.com/send?phone=201147737388" class="footer__icon"> <i class="fa fa-whatsapp" ></i> </a> <a href="mailto:nancy@nancyhassan.cf"   target="_blank" class="footer__icon"> <i class="fa fa-envelope" ></i> </a> <a href="mailto:nancy@nancyhassan.cf" target="_blank" style="color: white"> nancy@nancyhassan.cf</a> </div>
   <p>All rights reserved. copyright &#169; 2021. Made by <a href="https://www.adhamfouad.cf" target="_blank">Adham Fouad</a> </p>
 </footer>
-<!--===== SCROLL REVEAL =====--> 
-<script src="https://unpkg.com/scrollreveal"></script> 
-<!--===== MAIN JS =====--> 
-<script src="assets/js/main.js"></script>
 </body>
 </html>
